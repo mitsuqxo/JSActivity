@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Redeclaring a Variable Using var</h2>
+
+<p id="demo"></p>
+
+<script>
+var  x = 10;
+
+{  
+var x = 2;
+}
+
+document.getElementById("demo").innerHTML = x;
+</script>
+
+<h2>Redeclaring a Variable by using Let</h2>
+
+<p id="demo"></p>
+
+<script>
+    let x = 10;
+
+{ 
+    let x = 2;
+}
+
+document.getElementById("demo").innerHTML = x;
+</script>
+
+<h2>Javascript let</h2>
+<P>Redeclaring a JavaScript variable with <b>var</b> is allowed anywhere in a program:</P>
+
+<p id="demo"></p>
+
+<script>
+    var x = 2;
+
+    var x = 3;
+</script>
+
+<p>Redeclaring a variable with let, in another scope, or in another block, is allowed</p>
+<p id="demo"></p>
+
+<script>
+    let x = 2;
+
+    {
+        let x = 2;
+    }
+
+    {
+        let x = 4;
+    }
+</script>
+
+<h2>JavaScript Hoisiting</h2>
+
+<p>With var, you can use a variable before it is declared:</p>
+
+<p id="demo"></p>
+
+<script>
+    carName = "Volvo";
+    document.getElementById("demo").innerHTML = carName;
+    var carName;
+</script>
+
+</body>
+</html>
